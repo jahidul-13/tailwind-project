@@ -1,14 +1,13 @@
-import { build } from "vite";
-import { resolve } form "path";
-import { defineConfig } form "vite";
+import { resolve } from "path";
+import { defineConfig } from "vite";
 
-export default  defineConfig({
-    build: {
-        rollupOptions: {
-            input: {
-                main: resolve(__dirname, "index.html"),
-                news: resolve(__dirname, "news.html"),
-            },
-        },
+export default defineConfig({
+  build: {
+    rollupOptions: {
+      input: {
+        main: resolve(dirname, "index.html"),
+        news: resolve(dirname, "news.html"),
+      },
     },
+  },
 });
